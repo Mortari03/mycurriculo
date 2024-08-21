@@ -1,0 +1,69 @@
+/* index.css */
+
+/* Container principal */
+.courses-container {
+  background-color: #eef2f3;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  max-width: 800px;
+  margin: 50px auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Título principal */
+.courses-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+/* Estilo para cada item de curso */
+.course-item {
+  background-color: #ffffff;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-left: 5px solid #27ae60;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Título do curso */
+.course-title {
+  font-size: 1.8rem;
+  color: #34495e;
+  margin-bottom: 5px;
+}
+
+/* Informações do curso */
+.course-info {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  margin: 5px 0;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 480px) {
+  .courses-container {
+    padding: 15px;
+  }
+
+  .courses-title {
+    font-size: 2rem;
+  }
+
+  .course-title {
+    font-size: 1.5rem;
+  }
+
+  .course-info {
+    font-size: 1rem;
+  }
+}
